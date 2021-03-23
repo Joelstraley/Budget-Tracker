@@ -4,13 +4,15 @@ const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 const FILES_TO_CACHE = [
   "/",
-  "/index.html",
-  "/favicon.ico",
+  "index.html",
+  "favicon.ico",
   "/manifest.webmanifest",
-  "/style.css",
-  "/index.js",
-  "/icon/icon-192x192.png",,
-  "/icon/icon-512x512.png"
+  "style.css",
+  "index.js",
+  "indexedDb.js",
+  "manifest.webmanifest",
+  "./icon/icon-192x192.png",
+  "./icon/icon-512x512.png"
 ];
 
 // install
@@ -50,7 +52,7 @@ self.addEventListener("activate", function(evt) {
 
 // fetch
 self.addEventListener("fetch", function(evt) {
-  if (evt.request.url.includes("/api/transaction")) {
+  if (evt.request.url.includes("/api/")) {
     evt.respondWith(
       caches.open(DATA_CACHE_NAME).then(cache => {
         return fetch(evt.request)
