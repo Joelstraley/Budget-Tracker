@@ -1,3 +1,5 @@
+import { useIndexedDb } from "./indexedDb";
+
 let transactions = [];
 let myChart;
 
@@ -151,3 +153,9 @@ document.querySelector("#add-btn").onclick = function() {
 document.querySelector("#sub-btn").onclick = function() {
   sendTransaction(false);
 };
+
+useIndexedDb("expense", "expenseStore", "get).then(results => {
+  results.forEach(expense => {
+    updateChart(expenseChart, expense.name, expense.value);
+  });
+});
