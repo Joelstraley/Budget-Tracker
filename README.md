@@ -1,22 +1,28 @@
 # Budget Tracker [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
 ## Description
-vvGIVEN a user is on Budget App without an internet connection
+GIVEN a user is on Budget App without an internet connection
+WHEN the user inputs a withdrawal or deposit
+THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 
 [View Live Site](https://boiling-ridge-83668.herokuapp.com/)
 ## Table of Contents
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Tests](#Tests)
+
+* [Technologies](#Technologies)
 * [Questions](#Questions)
-## <a name="Installation">Installation</a>
-n.a
-## <a name="usage">Usage</a> 
-n.a
+* [License](#License)
 
 Screenshot: 
-![alt text](Screenshot)
+
+![alt text](https://github.com/Joelstraley/Budget-Tracker/blob/master/public/icons/Budget%20App%20Screenshot.png?raw=true)
+
+## <a name="Technologies">Technologies:</a>
+MongoDB, Heroku, Express, Node.JS, IndexedDB
+
+## <a name="Questions">Questions</a>
+For questions please reach out to [github.com/JoelStraley](github.com/JoelStraley) 
+or email me at [JoelStraley@gmail.com](mailto:JoelStraley@gmail.com)
+
 ## <a name="License">License</a>
 This is free and unencumbered software released into the public domain.
     
@@ -42,10 +48,3 @@ This is free and unencumbered software released into the public domain.
             OTHER DEALINGS IN THE SOFTWARE.
             
             For more information, please refer to <https://unlicense.org>
-## <a name="Contributing">Contributing</a>
-n.a
-## <a name="Tests">Tests</a>
-b.a
-## <a name="Questions">Questions</a>
-For questions please reach out to [github.com/JoelStraley](github.com/JoelStraley) 
-or email me at [JoelStraley@gmail.com](mailto:JoelStraley@gmail.com)
