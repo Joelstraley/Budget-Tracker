@@ -1,9 +1,9 @@
 # Budget Tracker [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+GIVEN a user is using the Budget Tracker without an internet connection
+WHEN the user continues to input withdrawals or deposits
+THEN they will be shown on the page, and added to their transaction history when their connection is back online.
 
 [View Live Site](https://boiling-ridge-83668.herokuapp.com/)
 ## Table of Contents
